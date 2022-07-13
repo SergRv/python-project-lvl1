@@ -16,4 +16,4 @@ https://asciinema.org/a/f3vYl9ZxVUeCUUWIyYPD8Nvti
 https://asciinema.org/a/XJs3OeUVGLw22514ZL3yo20cd
 
 # Brain-prime game demonstration:
-https://asciinema.org/a/hwlCc15E0mI35pdkCGtycjr0p
+https://asciinema.org/a/aZakWc2Zg7NytFh2cK9sOpNif
