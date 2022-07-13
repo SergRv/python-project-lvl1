@@ -16,6 +16,6 @@ def counted():
         if i == rand_numb:
             i = '..'
         result_list.append(i)
-    print('Question:',*result_list)
+    print('Question:', *result_list)
 
     return str(rand_numb)
