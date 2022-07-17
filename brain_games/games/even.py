@@ -2,13 +2,15 @@ import random
 
 
 def get_quest():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    return 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def counted():
+def start_round():
     rand_numb = random.randint(1, 20)
-    print(f'Question: {rand_numb}')
+    question = f'{rand_numb}'
     if rand_numb % 2 == 0:
-        return 'yes'
+        rand_numb = 'yes'
     else:
-        return 'no'
+        rand_numb = 'no'
+
+    return question, rand_numb

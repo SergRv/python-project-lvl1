@@ -2,10 +2,10 @@ import random
 
 
 def get_quest():
-    print('What number is missing in the progression?')
+    return 'What number is missing in the progression?'
 
 
-def counted():
+def start_round():
 
     step = random.randint(2, 8)
     numb = random.randint(0, 15)
@@ -13,9 +13,10 @@ def counted():
     rand_numb = random.choice(progression_list)
     result_list = []
     for i in progression_list:
-        if i == rand_numb:
+        i = str(i)
+        if i == str(rand_numb):
             i = '..'
         result_list.append(i)
-    print('Question:', *result_list)
+    question = f'{" ".join(result_list)}'
 
-    return str(rand_numb)
+    return question, str(rand_numb)

@@ -1,11 +1,11 @@
 #!/usr/bin/env python
-from brain_games.games import start_game
+from brain_games import Start_game
 from brain_games.games.progression import get_quest
-from brain_games.games.progression import counted
+from brain_games.games.progression import start_round
 
 
 def main():
-    start_game.started_game(get_quest, counted)
+    Start_game.start_game(get_quest, start_round)
 
 
 if __name__ == '__main__':

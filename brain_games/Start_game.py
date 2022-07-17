@@ -8,22 +8,23 @@ def welcome_user():
     return name
 
 
-def started_game(get_quest, counted):
+def start_game(get_quest, start_round):
 
     user_name = welcome_user()
-    get_quest()
-    count = 0
-    while count != 3:
-        begin_game = counted()
+    print(get_quest())
+    round_counter = 3
+    while round_counter != 0:
+        question, answer = start_round()
+        print(f"Question: {question}")
         your_answer = prompt.string('Your answer: ')
 
-        if your_answer == begin_game:
+        if your_answer == answer:
             print('Correct!')
-            count += 1
+            round_counter -= 1
         else:
             print(f""
                   f"'{your_answer}' is wrong answer ;(."
-                  f" Correct answer was '{begin_game}'.\n"
+                  f" Correct answer was '{answer}'.\n"
                   f"Let's try again, {user_name}!")
             return
 

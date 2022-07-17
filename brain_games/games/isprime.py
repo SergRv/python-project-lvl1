@@ -3,22 +3,25 @@ import math
 
 
 def get_quest():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
+    return 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def counted():
+def start_round():
 
     rand_numb = random.randint(1, 100)
-    prime = True
-    count = 2
-    print('Question:', rand_numb)
-    while count <= math.sqrt(rand_numb):
-        if rand_numb % count == 0:
-            prime = False
-            break
-        count += 1
+    question = str(rand_numb)
 
-    if prime:
-        return 'yes'
+    def is_prime():
+        count = 2
+        prime = True
+        while count <= math.sqrt(rand_numb):
+            if rand_numb % count == 0:
+                prime = False
+                break
+            count += 1
+        return prime
+
+    if is_prime():
+        return question, 'yes'
     else:
-        return 'no'
+        return question, 'no'

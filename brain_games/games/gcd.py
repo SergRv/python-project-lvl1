@@ -3,13 +3,13 @@ import math
 
 
 def get_quest():
-    print('Find the greatest common divisor of given numbers.')
+    return 'Find the greatest common divisor of given numbers.'
 
 
-def counted():
+def start_round():
 
     first_numb = random.randint(1, 50)
     second_numb = random.randint(1, 50)
-    print(f'Question: {str(first_numb)} {str(second_numb)}')
+    question = f'{str(first_numb)} {str(second_numb)}'
 
-    return str(math.gcd(first_numb, second_numb))
+    return question, str(math.gcd(first_numb, second_numb))
