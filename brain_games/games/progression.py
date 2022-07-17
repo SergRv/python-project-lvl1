@@ -9,7 +9,7 @@ def start_round():
 
     step = random.randint(2, 8)
     numb = random.randint(0, 15)
-    progression_list = list(range(numb, 45, step))
+    progression_list = list(range(numb, 65, step))
     rand_numb = random.choice(progression_list)
     result_list = []
     for i in progression_list:
