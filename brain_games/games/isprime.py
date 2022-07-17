@@ -12,8 +12,8 @@ def start_round():
     question = str(rand_numb)
 
     def is_prime():
-        count = 2
         prime = True
+        count = 2
         while count <= math.sqrt(rand_numb):
             if rand_numb % count == 0:
                 prime = False
