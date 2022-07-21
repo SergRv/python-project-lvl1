@@ -1,4 +1,5 @@
 import random
+from brain_games.games.calc import BEGIN_VALUE, FINAL_VALUE
 
 
 def get_quest():
@@ -6,7 +7,7 @@ def get_quest():
 
 
 def start_round():
-    rand_numb = random.randint(1, 20)
+    rand_numb = random.randint(BEGIN_VALUE, FINAL_VALUE)
     question = f'{rand_numb}'
     if rand_numb % 2 == 0:
         rand_numb = 'yes'

@@ -1,5 +1,7 @@
 import prompt
 
+GAME_COUNTER = 3
+
 
 def welcome_user():
     print('Welcome to the Brain Games!')
@@ -8,19 +10,17 @@ def welcome_user():
     return name
 
 
-def start_game(get_quest, start_round):
+def play_game(get_quest, start_round):
 
     user_name = welcome_user()
     print(get_quest())
-    round_counter = 3
-    while round_counter != 0:
+    for i in range(GAME_COUNTER):
         question, answer = start_round()
         print(f"Question: {question}")
         your_answer = prompt.string('Your answer: ')
 
         if your_answer == answer:
             print('Correct!')
-            round_counter -= 1
         else:
             print(f""
                   f"'{your_answer}' is wrong answer ;(."
