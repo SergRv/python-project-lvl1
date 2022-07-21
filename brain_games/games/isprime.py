@@ -9,11 +9,11 @@ def get_quest():
 
 def start_round():
     question = random.randint(BEGIN_VALUE, FINAL_VALUE)
-    answer = 'yes' if is_prime(question) else 'no'
+    answer = 'yes' if get_prime(question) else 'no'
     return question, answer
 
 
-def is_prime(question):
+def get_prime(question):
     counter = 2
     while counter <= math.sqrt(question):
         if question % counter == 0:
