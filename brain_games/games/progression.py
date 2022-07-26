@@ -1,4 +1,5 @@
 import random
+from brain_games import start_game
 
 
 BEGIN_STEP = 2
@@ -7,8 +8,7 @@ BEGIN_RANDOM_NUMB = 0
 FINAL_RANDOM_NUMB = 15
 
 
-def get_quest():
-    return 'What number is missing in the progression?'
+GAME_QUEST = 'What number is missing in the progression?'
 
 
 def start_round():
@@ -26,3 +26,6 @@ def start_round():
     question = f'{" ".join(result_list)}'
 
     return question, str(rand_numb)
+
+def run_this_game():
+    start_game.play_game(GAME_QUEST, start_round)

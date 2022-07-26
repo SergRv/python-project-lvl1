@@ -10,10 +10,10 @@ def welcome_user():
     return name
 
 
-def play_game(get_quest, start_round):
+def play_game(GAME_QUEST, start_round):
 
     user_name = welcome_user()
-    print(get_quest())
+    print(GAME_QUEST)
     for i in range(GAME_COUNTER):
         question, answer = start_round()
         print(f"Question: {question}")

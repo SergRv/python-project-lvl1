@@ -1,12 +1,10 @@
 import random
+from brain_games import start_game
 
 
 BEGIN_VALUE = 1
 FINAL_VALUE = 50
-
-
-def get_quest():
-    return 'What is the result of the expression?'
+GAME_QUEST = 'What is the result of the expression?'
 
 
 def start_round():
@@ -24,3 +22,6 @@ def start_round():
         result = first_num * second_num
 
     return question, str(result)
+
+def run_this_game():
+    start_game.play_game(GAME_QUEST, start_round)

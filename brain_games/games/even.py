@@ -1,9 +1,9 @@
 import random
 from brain_games.games.calc import BEGIN_VALUE, FINAL_VALUE
+from brain_games import start_game
 
 
-def get_quest():
-    return 'Answer "yes" if the number is even, otherwise answer "no".'
+GAME_QUEST = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def start_round():
@@ -15,3 +15,6 @@ def start_round():
         rand_numb = 'no'
 
     return question, rand_numb
+
+def run_this_game():
+    start_game.play_game(GAME_QUEST, start_round)
