@@ -21,5 +21,6 @@ def is_prime(question):
         counter += 1
     return True
 
+
 def run_this_game():
     start_game.play_game(GAME_QUEST, start_round)

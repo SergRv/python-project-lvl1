@@ -27,5 +27,6 @@ def start_round():
 
     return question, str(rand_numb)
 
+
 def run_this_game():
     start_game.play_game(GAME_QUEST, start_round)

@@ -23,5 +23,6 @@ def start_round():
 
     return question, str(result)
 
+
 def run_this_game():
     start_game.play_game(GAME_QUEST, start_round)
